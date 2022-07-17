@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "docker": "yarn && yarn dev",
+    "dev": "nuxt dev",
+    "start": "pm2-runtime ecosystem.config.js",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.5"
+  }
+}

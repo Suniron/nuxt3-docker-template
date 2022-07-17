@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  server:
+    container_name: nuxt3-dev
+    build: 
+      context: "."
+      target: "base"
+    volumes:
+      - ./:/app/
+      - ./node_modules/:/app/node_modules/
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+    command: yarn docker
