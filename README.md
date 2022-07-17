@@ -14,13 +14,13 @@ Hot reload is in place 🪄
 
 ## Development mode 💻
 
-1. Build with `docker compose -f "docker-compose.dev.yml" up -d --build`
+1. Build with `yarn docker:dev` or `docker compose -f "docker-compose.dev.yml" up -d --build`
 2. Code, code and code 😎
 
 ## Production mode ⚡
 
 1. Adapt wanted application exposed port (default to 3000) in `docker-compose.prod.yml`
-2. Build with `docker compose -f "docker-compose.prod.yml" up -d --build`
+2. Build with `yarn docker:prod` or `docker compose -f "docker-compose.prod.yml" up -d --build`
 3. ... Enjoy 🥳.
 
 ## Known limitations 😭
